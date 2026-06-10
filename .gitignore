@@ -1,1 +1,61 @@
+# ========================
+# Environment & Secrets
+# ========================
 .env
+.env.backup
+.env.production
+
+# ========================
+# Dependencies
+# ========================
+/vendor/
+/node_modules/
+
+# ========================
+# Build & Compiled Assets
+# ========================
+/public/build/
+/public/hot
+/public/storage
+npm-debug.log
+yarn-error.log
+
+# ========================
+# Storage & Logs
+# ========================
+/storage/*.key
+/storage/logs/*.log
+storage/upload_log.txt
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# ========================
+# Database
+# ========================
+/database/database.sqlite
+/database/*.sqlite-journal
+
+# ========================
+# IDE & OS
+# ========================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ========================
+# Testing & Debug
+# ========================
+.phpunit.result.cache
+/coverage/
+
+# ========================
+# Misc
+# ========================
+Homestead.json
+Homestead.yaml
+auth.json
