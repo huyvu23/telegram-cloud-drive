@@ -1,0 +1,5 @@
+[09:19:10] === Upload Request ===
+[09:19:10] INFO: File: z7751009604714_e0ae64a8faf8c65f664674e8809ce939.jpg Size: 84476
+[09:19:10] INFO: User: vuh32616@gmail.com (ID:1)
+[09:19:10] INFO: Using Telegram bot
+[09:19:13] SUCCESS: File ID:1 Telegram:3

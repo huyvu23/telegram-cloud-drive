@@ -42,7 +42,16 @@
     </header>
 
     <!-- Main -->
-    <main class="flex-1 p-4 max-w-6xl mx-auto w-full">
+    <main class="flex-1 p-4 max-w-6xl mx-auto w-full relative" 
+          @dragover.prevent="dragover = true" 
+          @dragleave.prevent="dragover = false" 
+          @drop.prevent="dragover = false; uploadFile({target: {files: $event.dataTransfer.files}})">
+          
+        <!-- Drag Overlay -->
+        <div x-show="dragover" class="absolute inset-0 bg-blue-500/10 border-4 border-dashed border-blue-500 rounded-2xl z-50 flex items-center justify-center pointer-events-none">
+            <h2 class="text-3xl font-bold text-blue-600">Drop files here to upload</h2>
+        </div>
+
         
         <!-- Alerts -->
         <div x-show="showSuccess" x-transition
@@ -353,6 +362,7 @@
 function driveApp() {
     return {
         // State
+        dragover: false,
         user: null,
         files: [],
         folders: [],
